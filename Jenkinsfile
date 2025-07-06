@@ -20,8 +20,6 @@ pipeline{
 			enviorment{}
             steps{
                 bat "docker push diwakar15/sauced:latest"
-                bat "docker tag diwakar15/sauced:latest diwakar15/sauced:${env.BUILD_NUMBER}"
-                bat "docker push diwakar15/sauced:${env.BUILD_NUMBER}"
             }
         }
 
