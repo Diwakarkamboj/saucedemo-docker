@@ -1,0 +1,12 @@
+{
+	"username" : "standard_user",
+	"password" : "secret_sauce",
+	"errorMessage" : "Error: First Name is required",
+	"firstName" : "John",
+	"lastName" : "Kumar",
+	"postCode" : "3006",
+	"totalAmount" : "Total: $60.45",
+	"orderPlaceMsg" : "THANK YOU FOR YOUR ORDER",
+	"disptachedMsg" : "Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+	
+}

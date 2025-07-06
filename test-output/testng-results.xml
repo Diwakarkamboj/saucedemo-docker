@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-04T14:51:49 AEST" name="SauceLab" finished-at="2025-07-04T14:51:58 AEST" duration-ms="8941">
+    <groups>
+    </groups>
+    <test started-at="2025-07-04T14:51:49 AEST" name="Standard-User" finished-at="2025-07-04T14:51:58 AEST" duration-ms="8941">
+      <class name="saucedemotestfiles.SauceLabTest">
+        <test-method is-config="true" signature="setupConfig()[pri:0, instance:saucedemotestfiles.SauceLabTest@be35cd9]" started-at="2025-07-04T14:51:49 AEST" name="setupConfig" finished-at="2025-07-04T14:51:49 AEST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupConfig -->
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:saucedemotestfiles.SauceLabTest@be35cd9]" started-at="2025-07-04T14:51:49 AEST" name="setDriver" finished-at="2025-07-04T14:51:53 AEST" duration-ms="3571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3646a422]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:saucedemotestfiles.SauceLabTest@be35cd9]" started-at="2025-07-04T14:51:53 AEST" name="setParameters" finished-at="2025-07-04T14:51:53 AEST" depends-on-methods="baseTestPackage.BaseTest.setDriver" duration-ms="265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/standarduser.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParameters -->
+        <test-method signature="validUserData()[pri:0, instance:saucedemotestfiles.SauceLabTest@be35cd9]" started-at="2025-07-04T14:51:53 AEST" name="validUserData" finished-at="2025-07-04T14:51:54 AEST" duration-ms="1194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUserData -->
+        <test-method signature="addProductsToCart()[pri:0, instance:saucedemotestfiles.SauceLabTest@be35cd9]" started-at="2025-07-04T14:51:54 AEST" name="addProductsToCart" finished-at="2025-07-04T14:51:56 AEST" depends-on-methods="saucedemotestfiles.SauceLabTest.validUserData" duration-ms="2047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductsToCart -->
+        <test-method signature="verifyCartItems()[pri:0, instance:saucedemotestfiles.SauceLabTest@be35cd9]" started-at="2025-07-04T14:51:56 AEST" name="verifyCartItems" finished-at="2025-07-04T14:51:56 AEST" depends-on-methods="saucedemotestfiles.SauceLabTest.addProductsToCart" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartItems -->
+        <test-method signature="vfyErrorMessage()[pri:0, instance:saucedemotestfiles.SauceLabTest@be35cd9]" started-at="2025-07-04T14:51:56 AEST" name="vfyErrorMessage" finished-at="2025-07-04T14:51:57 AEST" depends-on-methods="saucedemotestfiles.SauceLabTest.verifyCartItems" duration-ms="669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vfyErrorMessage -->
+        <test-method signature="vfyTotalAmt()[pri:0, instance:saucedemotestfiles.SauceLabTest@be35cd9]" started-at="2025-07-04T14:51:57 AEST" name="vfyTotalAmt" finished-at="2025-07-04T14:51:57 AEST" depends-on-methods="saucedemotestfiles.SauceLabTest.vfyErrorMessage" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vfyTotalAmt -->
+        <test-method signature="vfyOrderPlaceMsg()[pri:0, instance:saucedemotestfiles.SauceLabTest@be35cd9]" started-at="2025-07-04T14:51:57 AEST" name="vfyOrderPlaceMsg" finished-at="2025-07-04T14:51:57 AEST" depends-on-methods="saucedemotestfiles.SauceLabTest.vfyTotalAmt" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vfyOrderPlaceMsg -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:saucedemotestfiles.SauceLabTest@be35cd9]" started-at="2025-07-04T14:51:57 AEST" name="tearDown" finished-at="2025-07-04T14:51:58 AEST" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- saucedemotestfiles.SauceLabTest -->
+    </test> <!-- Standard-User -->
+  </suite> <!-- SauceLab -->
+</testng-results>

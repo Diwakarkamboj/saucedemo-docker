@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd">
+
+<suite name="SauceLab" parallel="tests" thread-count="4">
+
+	<test name="Standard-User">
+		<parameter name="testDataPath"
+			value="test-data/standarduser.json" />
+		<classes>
+			<class name="saucedemotestfiles.SauceLabTest" />
+			<class name="baseTestPackage.BaseTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
