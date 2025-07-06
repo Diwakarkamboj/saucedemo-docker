@@ -18,7 +18,7 @@ pipeline{
         
         stage('Push Image'){
             steps{
-                bat "docker push diwakar15/sauced:latest"
+                bat "docker push diwakar15/sauced"
             }
         }
 
