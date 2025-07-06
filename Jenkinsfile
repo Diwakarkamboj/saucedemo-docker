@@ -17,11 +17,23 @@ pipeline{
         }
         
         stage('Push Image'){
+			enviorment{
+				DOCKER_HUB = credentials('dockerhub-creds')
+			}
             steps{
-                bat "docker push diwakar15/sauced"
+				bat 'docker login -u %DOCKER_HUB_USR% -p %DOCKER_HUB_PSW%'
+                bat "docker push diwakar15/sauced:latest"
+                bat "docker tag diwakar15/sauced:latest diwakar15/sauced:${env.BUILD_NUMBER}"
+                bat "docker push diwakar15/sauced:${env.BUILD_NUMBER}"
             }
         }
 
+    }
+    
+     post {
+        always {
+            bat 'docker logout'
+        }
     }
 
 }
