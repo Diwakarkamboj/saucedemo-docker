@@ -53,7 +53,9 @@ public abstract class BaseTest {
 		Capabilities capabilities = new ChromeOptions();
 		if (Constants.FIREFOX.equalsIgnoreCase(Config.get(Constants.BROWSER))) {
 
-			capabilities = new FirefoxOptions();
+			FirefoxOptions options = new FirefoxOptions();
+			options.addArguments("-private");
+			capabilities = new FirefoxOptions(options);
 		}
 
 		String urlFormat = Config.get(Constants.GRID_URL_FORMAT);
